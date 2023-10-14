@@ -47,27 +47,38 @@ ul {
 }
 
 li {
-    display: flex;
-    align-items: center;
+    position: relative;
+    height: auto;
+    width: 500px;
+    max-height: 300px;
     margin-bottom: 10px;
     text-decoration: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 10px 5px;
+    word-wrap: break-word;
+    padding-right: 120px;
 }
 
-.delete-button,
-.delete-button:hover{
-    margin-left: auto;
+.done-button,
+.done-button:hover {
+    position: absolute;
+    top: 6px;
+    right: 70px;
     padding: 5px 10px;
-    background-color: #ff0000;
+    background-color: #00cc00;
     color: #fff;
     border: none;
     cursor: pointer;
 }
 
-.done-button,
-.done-button:hover{
-    margin-left: auto;
+.delete-button,
+.delete-button:hover {
+    position: absolute;
+    top: 6px;
+    right: 10px; 
     padding: 5px 10px;
-    background-color: #00cc00;
+    background-color: #ff0000;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -78,7 +89,7 @@ li {
     color: #888; /* Можно изменить цвет текста */
 }
 
-.task-text.done:hover{
+.task-text.done:hover {
     text-decoration: line-through; /* Зачеркиваем текст */
     color: #888; /* Можно изменить цвет текста */
 }
